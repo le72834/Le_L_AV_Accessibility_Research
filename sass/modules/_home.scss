@@ -1,1 +1,186 @@
-@import 'modules/_home';
+body {
+    font-size: 16px;
+}
+*{
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(44, 43, 43);
+    color: white;
+}
+.hideLyric {
+    display: none;
+}
+.showLyric {
+    display: block;
+    width: 300px;
+    .lyric1 {
+        margin: 10px;
+    }
+
+}
+h2 {
+    margin: 30px;
+}
+.vid-con {
+    margin: 30px;
+    video {
+        width: 100%;
+    }
+    h3 {
+        margin-top: 20px;
+    }
+    p{margin-top: 10px;}
+}
+.sub-vid {
+    margin: 30px;
+    video {
+        width: 100%;
+    }
+    h3 {
+        margin-top: 20px;
+    }
+    p{margin-top: 10px;}
+}
+.nav-con {
+    margin: 30px;
+    img {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+    .typeCon{
+       margin: 10px 20px;
+        text-decoration: none;
+        background-color:blanchedalmond;
+        border-radius: 10px;
+        padding: 10px;
+        color:darksalmon;
+    }
+}
+.progress {
+    width: 250px;
+    &__top {
+        display: flex;
+    }
+    &__duration {
+        color:rgb(160, 177, 214);
+        opacity: 0.5;
+    }
+    &__time {
+        color: azure;
+
+    }
+}
+.progress-bar {
+    height: 5px;
+    width: 100%;
+    cursor: pointer;
+    background-color:azure;
+    display: inline-block;
+    border-radius: 10px;
+   
+}
+.current-bar {
+    background-color: rgb(160, 177, 214);
+    height: inherit;
+    width: 0%;
+    display: inline-block;
+    border-radius: 10px;
+    position: fixed;
+}
+
+.current-time {
+    color: white;
+    font-size: 16px;
+}
+.lyric-con {
+    margin: 20px;
+    
+    button {
+        margin: 20px;
+        padding: 15px;
+        background-color: burlywood;
+        border-radius: 7px;
+        font-size: 16px;
+    }
+}
+.lyric-text {
+    display: none;
+   
+    
+}
+.audio-player {
+    margin: 20px 40px;
+   
+}
+.audio-control {
+    margin: 20px 40px;
+    i {
+        &:hover {
+            color:rgb(160, 177, 214);
+        }
+    }
+   
+}
+.progress {
+    margin: 20px 40px;
+}
+.album-info {
+    margin: 20px 40px;
+   
+    img {
+        width: 20%;
+    }
+}
+.speed {
+    margin: 20px 40px;
+    h3 {
+        margin-bottom: 10px;
+    }
+    ul {
+        list-style-type: none;
+        cursor: pointer;
+       li {
+           margin: 0px 15px;
+           display: inline;
+           &:hover {
+               color:rgb(160, 177, 214);
+           }
+       }
+    }
+}
+//for tablet
+@media screen and (min-width: 700px) {
+    .sub-vid {
+        display: grid;
+        grid-template-columns: 300px 300px;
+        .sub-text {
+            margin-left: 40px;
+        }
+    }
+    .nav-con {
+        display: grid;
+        grid-template-columns: 350px 300px;
+    }
+    .audio-control {
+        display: grid;
+        grid-template-columns: 50px 50px 50px ; 
+       }
+     .audio-pro {
+         margin-left: 50px;
+     }
+}
+//for desktop
+@media screen and (min-width: 1024px) {
+    .sub-vid {
+        display: grid;
+        grid-template-columns: 500px 530px;
+        .sub-text {
+            margin-top: 30px;
+            margin-left: 80px;
+        }
+    }
+    
+    
+ }
